@@ -1,0 +1,14 @@
+main:
+  project_name: Genre Prediction
+  experiment_name: dev
+  execute_steps:
+    - download
+    - preprocess
+    - check_data
+    - segregate
+    - random_forest
+    - evaluate
+  # This seed will be used to seed the random number generator
+  # to ensure repeatibility of the data splits and other
+  # pseudo-random operations
+  random_seed: 42
