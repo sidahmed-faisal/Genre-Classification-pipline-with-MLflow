@@ -1,0 +1,8 @@
+mlflow run . -P hydra_options="main.project_name=test  random_forest_pipeline.random_forest.max_depth=5"
+
+mlflow run https://github.com/sidahmed-faisal/Genre-Classification-pipline-with-MLflow.git  -P hydra_options="main.project_name=test_release_one"
+
+
+ mlflow run https://github.com/sidahmed-faisal/Genre-Classification-pipline-with-MLflow.git \ 
+             -v 1.0.0 \
+             -P hydra_options="main.project_name=remote_execution"

@@ -6,3 +6,6 @@ outputs/
 /check_data/.pytest_cache
 /check_data/wandb
 /segregate/wandb
+/random_forest/wandb
+/evaluate/wandb
+/evaluate/artifacts
