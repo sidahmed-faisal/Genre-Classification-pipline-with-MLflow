@@ -2,3 +2,6 @@ mlruns/
 outputs/
 /download/wandb/
 /preprocess/wandb
+/check_data/__pycache__
+/check_data/.pytest_cache
+/check_data/wandb
