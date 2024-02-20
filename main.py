@@ -47,7 +47,7 @@ def go(config: DictConfig):
                 "artifact_description": "Data with preprocessing applied"
             },
         )
-        
+
     if "check_data" in steps_to_execute:
         _ = mlflow.run(
             os.path.join(root_path, "check_data"),
@@ -58,6 +58,21 @@ def go(config: DictConfig):
                 "ks_alpha": config["data"]["ks_alpha"]
             },
         )
+
+    if "segregate" in steps_to_execute:
+
+        _ = mlflow.run(
+            os.path.join(root_path, "segregate"),
+            "main",
+            parameters={
+                "input_artifact": "preprocessed_data.csv:latest",
+                "artifact_root": "data",
+                "artifact_type": "segregated_data",
+                "test_size": config["data"]["test_size"],
+                "stratify": config["data"]["stratify"]
+            },
+        )
+
 
 if __name__ == "__main__":
     go()
