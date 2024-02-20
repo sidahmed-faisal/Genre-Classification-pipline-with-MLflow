@@ -1,3 +1,4 @@
 mlruns/
 outputs/
 /download/wandb/
+/preprocess/wandb
