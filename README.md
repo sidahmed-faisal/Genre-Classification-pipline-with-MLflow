@@ -16,33 +16,23 @@
 ## Files and data description
 The project is organized with the following directory architecture:
 - Folders
-    - Download     
-        - eda       --> contains output of the data exploration
-        - results   --> contains the dataset in csv format
+    - download     
+
     - preprocess      
-        - eda       --> contains output of the data exploration
-        - results   --> contains the dataset in csv format
+
     - check_data       
-        - eda       --> contains output of the data exploration
-        - results   --> contains the dataset in csv format
+
     - segregate      
-        - eda       --> contains output of the data exploration
-        - results   --> contains the dataset in csv format
+
     - random_forest      
-        - eda       --> contains output of the data exploration
-        - results   --> contains the dataset in csv format
+
     - evaluate      
-        - eda       --> contains output of the data exploration
-        - results   --> contains the dataset in csv format
-    - images        --> contains model scores, confusion matrix, ROC curve
-    - models        --> contains saved models in .pkl format
-    - logs          --> log generated druing testing of library.py file
 
 - project files 
-    - main.py
-    - conda.yml
-    - config.txt
-    - MLproject
+    - main.py ----> main script for the pipeline that runs each step 
+    - conda.yml -----> creates conda environment for mlflow pipeline execution
+    - config.txt -----> Configuration file for the project and default model parameters 
+    - MLproject -------> Mlflow project configuration 
 
 ## Running Files
 * First create conda environment using :
