@@ -6,3 +6,9 @@ mlflow run https://github.com/sidahmed-faisal/Genre-Classification-pipline-with-
  mlflow run https://github.com/sidahmed-faisal/Genre-Classification-pipline-with-MLflow.git \ 
              -v 1.0.0 \
              -P hydra_options="main.project_name=remote_execution"
+
+For MLflow serving
+ conda create --name serve python=3.8 mlflow=1.14.1 wandb=0.10.28 numpy=1.18.1 pandas=1.2.3 -c conda-forge
+
+ mlflow models build-docker -m model -n "genre_classification"
+ 
