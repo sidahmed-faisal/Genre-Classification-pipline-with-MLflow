@@ -66,6 +66,11 @@ wandb login
 mlflow run . -P hydra_options="main.project_name=your_project_name"
 ```
 
+* Deploy the project as Docker container:
+```
+ mlflow models build-docker -m model -n "genre_classification"
+```
+
 
 
 
