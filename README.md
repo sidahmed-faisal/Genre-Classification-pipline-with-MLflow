@@ -1,4 +1,4 @@
-### Pipline Flow
+### Pipline Flow : https://wandb.ai/sidahmed-faisal/Genre%20Prediction?workspace=user-sidahmed-faisal
 ![Pipline-Diagram](/model/wdb.png)
 
 # Genre Classification Pipeline using MLFlow and Weights and Biases 
