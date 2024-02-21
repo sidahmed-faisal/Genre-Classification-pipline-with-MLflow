@@ -1,3 +1,6 @@
+### Pipline Flow
+![Pipline-Diagram](/model/wdb.png)
+
 # Genre Classification Pipeline using MLFlow and Weights and Biases 
 
 - Project **Genre Classification Model** using MLflow and Weights and Biases to manage the preprocessing of the dataset and feature engineering and storing the model to inference artifact

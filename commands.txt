@@ -10,5 +10,7 @@ mlflow run https://github.com/sidahmed-faisal/Genre-Classification-pipline-with-
 For MLflow serving
  conda create --name serve python=3.8 mlflow=1.14.1 wandb=0.10.28 numpy=1.18.1 pandas=1.2.3 -c conda-forge
 
+
+ wandb artifact get sidahmed-faisal/test/model_export:prod --root model
  mlflow models build-docker -m model -n "genre_classification"
  
