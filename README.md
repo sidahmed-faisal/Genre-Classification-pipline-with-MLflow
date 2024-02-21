@@ -46,11 +46,25 @@ The project is organized with the following directory architecture:
 
 ## Running Files
 * First create conda environment using :
-* ``
-* conda create --name serve python=3.8 mlflow=1.14.1 wandb=0.10.28 numpy=1.18.1 pandas=1.2.3 -c conda-forge
-* ``
+```
+conda create --name serve python=3.8 mlflow=1.14.1 wandb=0.10.28 numpy=1.18.1 pandas=1.2.3 -c conda-forge
+```
+* Login to Wandb using:
+```
+wandb login
+```
 
-* Second Run the Machine learning pipline using:
+* Run the project using:
+```
+ mlflow run https://github.com/sidahmed-faisal/Genre-Classification-pipline-with-MLflow.git \ 
+             -v 1.0.0 \
+             -P hydra_options="main.project_name=remote_execution"
+``` 
+
+* Or Clone the project and run it using:
+```
+mlflow run . -P hydra_options="main.project_name=your_project_name"
+```
 
 
 
