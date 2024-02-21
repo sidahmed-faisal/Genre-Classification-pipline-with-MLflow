@@ -56,9 +56,13 @@ wandb login
 mlflow run . -P hydra_options="main.project_name=your_project_name"
 ```
 
-* Deploy the project as Docker container:
+* Deploy the project as gunicorn server:
 ```
- mlflow models build-docker -m model -n "genre_classification"
+mlflow models serve -m model &
+```
+* Or as a Docker Container
+```
+mlflow models build-docker -m model -n "genre_classification"
 ```
 
 
